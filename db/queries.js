@@ -1,7 +1,10 @@
 const knex = require('./knex'); // the connection!
 
 module.exports = {
-  getAll() {
+  showStickers: {
+    getAll: function() {
+      return knex('sticker');
+    }
   },
   getOne(id) {
   },
